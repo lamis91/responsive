@@ -1,0 +1,218 @@
+    *{
+          padding: 0;
+          margin: 0;
+          text-decoration: none;
+          list-style: none;
+          box-sizing: border-box;
+        }
+       body{
+          padding: 0;
+          margin: 0;
+          background-image: url('download\ \(1\).jpeg');
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center; 
+          background-size: 100% 100%;
+          transition: background-image 0.5s ease-in-out;
+
+        }  
+
+        .navbar{
+          width: 60%;
+          position: fixed;
+          top: 0;
+          left: 50%;
+          transform: translate(-50%);
+          height: 50px;
+          border-radius: 0 0 20px 20px;
+          align-items: center;
+          background-color: black;
+          opacity: 0.75;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          /* top: -5px; Initial position above the viewport */
+         animation-duration: 1s;
+         animation-name: navbarAnimation;
+       }
+       @keyframes navbarAnimation {
+        0% {
+          top: -50px;
+        }
+        100% {
+          top: 0;
+        }
+      }
+      
+      .navbar-logo{
+          margin-right: auto;
+          width: 150px;
+          padding-left: 10px;
+          padding-right: 10px;
+
+      }
+      .navbar ul{
+          float: right;
+          margin-right: 20px;   /* مكانهم في الناف*/
+          margin-top: 7px;
+      }
+      .navbar li{
+          display:  inline-block;
+          margin-right: 20px;
+          line-height:20px ; /*بيتحكم ف مكان التابات ف الناف*/
+      }
+      .navbar li a{
+          color: white;
+      }  
+       .navbar li a:hover{
+        color: #ff6347;   /*يعمل لون علي التاب*/
+       }
+        
+             /* form edits*/
+           
+           /* .flex-input {
+            flex: 1;
+          } */
+           
+           .container{
+            text-align: center;
+            height: 700px;
+           }
+           h2{
+            color: white;
+            margin-top: 30px;
+            
+           }  
+           #countrySelect {
+            padding: 10px 20px;
+            font-size: 14px;
+            margin-top: 20px;
+
+          } 
+
+          .form-container {
+            margin: 7.5px ;
+            width: 870px;
+            height:  690px;
+            padding: 25px;
+            padding-bottom: 50px;
+            padding-left: 7px;
+            background-color: #042f4b;
+            border-radius: 5px;
+            opacity: 80%;
+            display: flex;
+            margin-left: 60px;  /*بيحرك  الفورم كامله لمكانها دلوقتي*/
+            margin-top: 50px;
+          
+          }
+        
+          
+          form div {
+            margin-bottom:10px;
+            color:rgb(252, 248, 248);
+            align-items: center;
+          }
+          
+          label {
+            display: inline-block;
+            width: 250px  /*المسافه بين التيكست وبعضه بالطول*/
+
+          }
+                
+          
+         #submit-btn {
+          background-color: #252570;
+          color: #fff;
+          padding: 10px 19px;
+          border: none;
+          cursor: pointer; 
+          /* margin-left:22px ; بيحرك الزرار شمال جوا الفورم */
+          /* padding-bottom: 9px; */
+          position: absolute;
+          margin-bottom: 3px;
+          bottom: 10px;
+          left: 375px;
+        }
+    
+        #submit-btn:hover {
+          background-color: #158d25;
+          box-shadow: 0px 0px 5px midnightblue,
+                      0px 0px 30px mediumblue,
+                      0px 0px 30px mintcream;
+         }
+        
+        
+        .form-row {
+          display: flex;    
+          justify-content: space-between;
+          margin-bottom: 10px;
+          
+        }
+        .tellus{
+          border-radius: 4px;
+          resize: none;
+        }
+        
+        
+        .form-group {
+          flex: 1;
+          margin-right: 120px; 
+          margin-left: 70px;
+          margin-top: 1px;
+          margin-bottom: 5px;
+         
+        }
+      
+        label {
+          display: inline-block;
+          /* margin-bottom: 5px; */
+        }
+        
+        input[type="text"],
+        input[type="date"],
+        input[type="file"],
+        select {
+          width: 100%;
+          padding: 5px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+        
+        #output {
+          padding-top: 70ch;
+          left: 100px;
+          color: bisque;
+        
+        }    
+        button {
+          /*margin-top: 0px;*/
+          padding: 10px 20px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-bottom: 95px;
+          
+        }
+        .form-container{
+          animation: fade-in 2s forwards;
+          opacity: 80%;
+        }
+        @keyframes fade-in {
+          from {
+            
+            transform: translateY(-20px);
+          }
+          to {
+            opacity: 85%;
+            transform: translateY(0);
+          }
+        }
+        
+        
+       

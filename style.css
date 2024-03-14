@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+.port{
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+/* Define your responsive styles here */
+@media screen and (max-width: 768px) {
+  /* Styles for screens up to 768px wide */
+}
+
+@media screen and (max-width: 480px) {
+  /* Styles for screens up to 480px wide */
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('download (1).jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 100% 100%;
+  transition: background-image 0.5s ease-in-out;
+ }
+ .center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.center-logo-img {
+  width: 350px; /* Adjust the size as needed */
+  opacity: 0.7; /* Adjust the opacity value for transparency */
+}
+
+
+ .navbar{
+  width: 60%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 65px;
+    border-radius: 0 0 20px 20px; /* Border radius for the top corners */
+    align-items: center;
+    background-color: #0c171d;  /*لون الناف*/
+    opacity: 75%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    /* top: -5px; Initial position above the viewport */
+    animation-duration: 1s;
+  animation-name: navbarAnimation;
+ }
+ @keyframes navbarAnimation {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  /* 100% {
+    opacity: 0;
+  } */
+}
+.navbar-logo{
+    margin-right: auto;
+    width: 250px;  /*عرض الناف*/
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 25px;
+    animation: fadeInOut 4s ;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+.navbar li{
+    display:  inline-block;
+    margin-right: 20px;
+    line-height:30px ; /*بيتحكم ف مكان التابات ف الناف*/
+}
+.navbar li a{
+    color: white;
+}
+
+    /*CSS for title & discription*/
+    .content{
+    position: absolute;
+       top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color:rgb(5, 3, 3);
+        
+    }
+    div.title{
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    /* .text{  هيروح لصفحه العمال
+      font-size: 25px;
+      color: rgb(246, 249, 246);
+    }*/
+    .description{
+        font-size: 30px;
+        margin: bottom 20px; 
+    }
+    .pyramids{
+      color: #ed400b;
+      font-style: italic;
+      font-size: 35px;
+    }
+      /*.checkbotton{
+        font-size: 30px;
+        color: white;
+        float: right;
+        line-height: 40px;
+      }*/
+      .bottomright {
+        position: absolute;
+        bottom: 8px;
+        right: 16px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+      }
+      .navbar li a:hover{
+        color: #56e423;   /*يعمل لون علي التاب*/
+       }
+       .social-media {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .social-icon {
+        height: 46px;
+        width: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0.45rem;
+        color: #ecd9d9;
+        border-radius: 50%;
+        border: 1px solid#ecd9d9;
+        text-decoration: none;
+        font-size: 1.1rem;
+        transition: 0.3s;
+      }
+      
+      .social-icon:hover {
+        color: rgb(55, 83, 220);
+        border-color: #2ba1e1;
+      }
+      
+      .bottomright{
+        width: 200px;
+        border: none;
+        outline: none;
+        height: 55px;
+        border-radius: 49px;
+        color: #e7eced;
+        text-transform: uppercase;
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: 700;
+        margin: 10px 0;
+        cursor: pointer;
+        transition: 0.5s;
+        text-align: center;
+        
+      }
+      h1{
+        animation-duration: 2s;
+        animation-name: s;
+      }
+      @keyframes s{
+        0%{
+          opacity:0% ;
+          /* transform: rotate(90deg); */
+          filter: blur(20px);}
+          100%{
+            opacity: 1;
+            /* transform: rotate(0deg); */
+            filter: blur(0px);
+          }
+        from{margin-bottom: 100%;
+        }to{
+          text-align: center;
+        }
+      }

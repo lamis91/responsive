@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+   body{
+    margin: 0;
+    padding: 0;
+    background-image: url('download (1).jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100% 100%;
+    transition: background-image 0.5s ease-in-out;
+   }
+  .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    background-color: black;
+    opacity: 0.75;
+    padding: 10px;
+    display: inline;
+    justify-content: flex-end;
+    height: 50px;
+ }
+
+.navbar-logo{
+    margin-right: auto;
+    width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+.navbar li{
+    display:  inline-block;
+    margin-right: 20px;
+    line-height:20px ; /*بيتحكم ف مكان التابات ف الناف*/
+}
+.navbar li a{
+    color: white;
+}   
+.navbar li a:hover{
+  color: #ff6347;   /*يعمل لون علي التاب*/
+ }
+
+
+          /*-------------------bottom style------------------*/
+                        #Back {
+                            background-color: #1a1a54;
+                            color: #fff;
+                            padding: 10px 15px;
+                            border: none;
+                            cursor: pointer;
+                            
+                          }
+                        
+                          #Back:hover {
+                            background-color: #158d25;
+                            box-shadow: 0px 0px 5px midnightblue,
+                                        0px 0px 30px mediumblue,
+                                        0px 0px 30px mintcream;
+                           }
+                          button {
+                            margin-top: 0px;
+                            padding: 10px 20px;
+                            background-color: #4CAF50;
+                            color: white;
+                            border: none;
+                            border-radius: 4px;
+                            /*cursor: pointer;*/
+                            margin-bottom: 70px;
+                           /* transition: all 0.2s ease;*/
+                          }
+                          button:active{
+                            transform: scale(0.96);
+                          }
+
+                          #content{
+                            
+                                margin: 500px ;
+                                padding-top: 10px;
+                                width: 700px;
+                                height:  630px;
+                                padding: 20px; /*لمحتويات الفورم مش container*/
+                                padding-bottom: 50px;
+                                background-color: #042f4b;
+                                border-radius: 5px;
+                                
+                               /*margin-bottom:20px;*/
+                                /*margin-right:80px;*/
+                                opacity: 75%;
+                                display:flex ;
+                                margin-left: 50px;
+                                /*position: absolute;*/
+                                transition: left 1.5s;  /*سرعه حركه الفورم   animation */
+                                
+                              }
+                              .contentr.show {
+                                left: calc(50% - 200px);  /*تتحرك من الشمال لمكانها*/
+                              }
+                          h3{
+                            text-decoration: wavy;
+                            color: #ffffff;
+                            font-size:  25px;
+                          }
